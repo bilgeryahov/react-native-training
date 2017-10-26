@@ -1,11 +1,16 @@
 import React  from 'react';
-import { FlatList, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
+
+import { Header } from '../components/UserDetails';
+import colors from '../config/colors';
 
 class Details extends React.Component {
 	render() {
+		const contact = this.props.navigation.state.params;
+
 		return (
-			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-				<Text>Details Screen</Text>
+			<View style={{ backgroundColor: colors.background }}>
+				<Header {...contact} />
 			</View>
 		);
 	}
