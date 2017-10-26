@@ -10,7 +10,10 @@ class NewContact extends React.Component {
 		return (
 			<ScrollView style={{ backgroundColor: colors.background }}>
 				<CustomTextInput
-					placeholder="First name..."
+					placeholder="First Name..."
+				/>
+				<CustomTextInput
+					placeholder="Last Name..."
 				/>
 			</ScrollView>
 		);
