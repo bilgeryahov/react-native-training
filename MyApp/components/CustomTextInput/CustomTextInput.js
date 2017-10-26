@@ -3,7 +3,7 @@ import { View, TextInput } from 'react-native';
 
 import styles from './styles';
 
-const CustomTextInput = ({ props }) => {
+const CustomTextInput = ( props ) => {
 	return (
 		<View style={styles.container}>
 			<TextInput
