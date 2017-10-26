@@ -1,4 +1,5 @@
 import React  from 'react';
+import { FlatList, View, Text } from 'react-native';
 
 class Details extends React.Component {
 	render() {
