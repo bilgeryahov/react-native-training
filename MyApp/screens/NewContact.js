@@ -1,12 +1,18 @@
 import React  from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
+
+import { CustomTextInput } from '../components/CustomTextInput';
+
+import colors from '../config/colors';
 
 class NewContact extends React.Component {
 	render() {
 		return (
-			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-				<Text>NewContact Screen</Text>
-			</View>
+			<ScrollView style={{ backgroundColor: colors.background }}>
+				<CustomTextInput
+					placeholder="First name..."
+				/>
+			</ScrollView>
 		);
 	}
 }
