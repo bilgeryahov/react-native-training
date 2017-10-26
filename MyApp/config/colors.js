@@ -4,5 +4,6 @@ export default {
 	subtleText: '#9a9a9a',
 	rowUnderlay: 'rgba(154, 154, 154, 0.25)',
 	border: '#cccccc',
-	grayBackground: '#f9fafb'
+	grayBackground: '#f9fafb',
+	link: '#007aff'
 };
