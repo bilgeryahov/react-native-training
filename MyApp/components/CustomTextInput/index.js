@@ -1,4 +1,4 @@
-import CustomTextInput from './TextInput';
+import CustomTextInput from './CustomTextInput';
 import styles from './styles';
 
 export {
