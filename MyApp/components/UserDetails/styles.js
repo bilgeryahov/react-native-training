@@ -19,5 +19,32 @@ export default StyleSheet.create({
 		fontSize: 22,
 		marginTop: 10,
 		color: colors.primaryText
+	},
+	actionContainer: {
+		borderTopWidth: StyleSheet.hairlineWidth,
+		borderBottomWidth: StyleSheet.hairlineWidth,
+		borderTopColor: colors.border,
+		borderBottomColor: colors.border,
+		paddingVertical: 15,
+		backgroundColor: colors.grayBackground
+	},
+	actionRow: {
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
+		paddingHorizontal: 20
+	},
+	actionInfo: {
+		flexDirection: 'column'
+	},
+	actionLabel: {
+		fontSize: 12,
+		color: colors.subtleText,
+		marginBottom: 3
+	},
+	actionBody: {
+		fontSize: 16,
+		color: colors.primaryText,
+		marginBottom: 5
 	}
 });
