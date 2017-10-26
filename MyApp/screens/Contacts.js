@@ -1,11 +1,17 @@
 import React  from 'react';
+import { FlatList, View, Text } from 'react-native';
+import { contacts } from '../config/data';
+import colors from '../config/colors';
 
 class Contacts extends React.Component {
 	render() {
 		return (
-			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-				<Text>Contacts Screen</Text>
-			</View>
+			<FlatList
+				style={{ backgroundColor: colors.background }}
+			    data={contacts}
+				renderItem={({item}) => <View><Text>{item.email}</Text></View> }
+			    keyExtractor={(item) => item.email}
+			/>
 		);
 	}
 }
